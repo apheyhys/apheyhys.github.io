@@ -1,0 +1,74 @@
+<section class="order" id="order">
+    <div class="container-fulid">
+        <div class="row no-gutters">
+            <div class="col-lg-12">
+                <div class="order-aria">
+                    <h2 style="color: white;">Оставьте заявку</h2>
+
+                    <form id="order-form" class="row order-form" action="{{ .Site.Params.fabFormURL }}" method="POST">
+
+                        <div class="col-md-6 order-checkbox-wrapper">
+                            <p>Какие системы необходимо смонтировать?</p>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" />
+                                <span class="checkbox__label"></span>
+                                <p>Вентиляция</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" />
+                                <span class="checkbox__label"></span>
+                                <p>Кондиционирование</p>
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p>Выберите тип помещения</p>
+                            <div class="form-row align-items-center mb-3">
+                                <select class="custom-select form-control-select mr-2 ml-1" id="inlineFormCustomSelect">
+                                    <option value="1" selected>Квартира</option>
+                                    <option value="2">Офис</option>
+                                    <option value="3">Загородый дом</option>
+                                </select>
+                            </div>
+
+                            <p>Площадь помещения, м<sup>2</sup></p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-range-input" name="input_text1"
+                                    id="input_text1" max="1000" value="0"
+                                    onchange="rangeinput1.value = input_text1.value" />
+                                <input type="range" oninput="input_text1.value = rangeinput1.value"
+                                    class="form-control-range slider mb-2" type="range" min="0" max="1000" value="0"
+                                    id="rangeinput1" step="5" onchange="input_text1.value = rangeinput1.value">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" required=""
+                                name="Name" placeholder="Ваше имя *">
+                            <input type="email" class="form-control" id="validationCustom02" name="email"
+                                placeholder="Email">
+                            <input type="phone" class="form-control" id="validationCustom02" required="" name="phone"
+                                placeholder="Номер телефона *">
+                        </div>
+
+                        <div class="col-md-7">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message"
+                                placeholder="Дополнительный комментарий"></textarea>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary" id="contact-form-button"
+                                formtarget="_blank">Отправить заявку</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

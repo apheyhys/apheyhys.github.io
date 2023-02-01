@@ -1,0 +1,67 @@
+<!-- Mark up for Site Navigation Section-->
+{{ $address := .Site.Params.address}}
+<header class="header">
+  <nav class="main-nav navbar navbar-expand-lg {{ if not $.IsHome }}main-nav-colored{{ end }}">
+    <div class="container-fluid">
+      <a href="{{.Site.BaseURL}}" class="navbar-brand">
+        <img src="{{ .Site.Params.logo | absURL}}" alt="site-logo" />
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="header-contact">
+        <li class="header-contact-mail"><i class="ti-email"></i><a href="mailto:{{ $address.email }}">{{ $address.email }}</a></li>
+        <li class="header-contact-phone"><i class="ti-mobile"></i><a href="tel:{{ $address.phone}}">{{ $address.phone }}</a></li>
+      </ul>
+      <div
+        class="collapse navbar-collapse nav-list"
+        id="mainNav"
+      >
+     
+        <ul class="navbar-nav ml-auto">
+          <!-- {{ $currentPage := . }}
+          {{ $menu := .Site.Menus.main}}
+          {{range $index, $element := $menu}}
+          <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+             <a class="nav-link scroll-to" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
+          </li>
+          {{end}}  -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Вентиляция
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Наши услуги</a></li>
+              <li><a class="dropdown-item" href="#">Этапы работ</a></li>
+              <li><a class="dropdown-item" href="#">Прайс на монтаж вентиляции</a></li>              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Кондиционирование
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Наши услуги</a></li>
+              <li><a class="dropdown-item" href="#">Этапы работ</a></li>
+              <li><a class="dropdown-item" href="#">Прайс на монтаж кондиционеров</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Расчет мощности кондиционера</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Выполненные работы</a>
+          </li>
+    
+
+    
+
+        </ul>
+        <a href="#order" class="btn btn-outline-primary btn-lg">Оставить заявку</a>
+      </div>
+    </div>
+  </nav>
+</header>
