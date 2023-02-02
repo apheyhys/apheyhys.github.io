@@ -1,0 +1,36 @@
+---
+enable: true
+title: "Наши услуги?"
+subtitle: >
+          Кондиционирование
+services:
+  - name: "Монтаж климатических систем"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-view-grid"
+  - name: "Проектирование"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-infinite"
+  - name: "Сервисное и сезонное обслуживание обслуживание "
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-help-alt"
+  - name: "Ремонт климатических систем"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-credit-card"
+  - name: "Согласование установки кондиционеров"
+    description: >
+                Согласование монтажа наружного блока кондиционера с вашей управляющей компанией или в КГА.                
+    icon: "ti-lock"
+  - name: "Подбор и поставка оборудования"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-image"
+---

@@ -1,0 +1,37 @@
+---
+enable: true
+title: "Наши услуги"
+subtitle: >
+          Вентиляция
+services:
+  - name: "Монтаж систем вентиляции"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-view-grid"
+  - name: "Сервисное обслуживание и ремонт"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-infinite"
+  - name: "Пусконаладочные работы"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-help-alt"
+  - name: "Обследование"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-credit-card"
+  - name: "Проектирование "
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-lock"
+  - name: "Подбор и поставка оборудования"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-image"
+---
