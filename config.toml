@@ -1,4 +1,4 @@
-baseURL = 'https://cohub-hugo.netlify.app'
+baseURL = 'https://apheyhys.github.io'
 languageCode = 'ru-ru'
 paginate = 6
 theme= "coHub"
