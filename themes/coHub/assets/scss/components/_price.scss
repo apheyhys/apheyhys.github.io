@@ -1,0 +1,40 @@
+.price {
+
+
+    &__header {
+        // align-items: center;
+        text-align: center;
+    }
+
+    &__wrapper {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    &__item {
+        // width: 100%;
+        padding: 0 10px;
+        display: flex;
+        align-items: baseline;
+        
+
+        p {
+            color: #252525;
+            font-size: 14px;
+        }
+
+        &-value {
+            white-space: nowrap;
+        }
+
+        &-line {
+            flex-grow: 1;
+            margin: 0 8px;
+            border-bottom: 1px dashed #666666;
+        }
+
+    }
+}

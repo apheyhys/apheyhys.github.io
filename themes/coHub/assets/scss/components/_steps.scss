@@ -1,0 +1,160 @@
+$primary-color: #0077EE;
+$primary-color-hover: scale-color($primary-color, $lightness: 32%);
+
+/*==================================
+    TIMELINE
+==================================*/
+
+/*-- GENERAL STYLES
+    ------------------------------*/
+.steps {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+        width: 50%;
+    }
+
+    &__header {
+        margin: 30px;
+    }
+
+   
+
+    &__timeline {
+        line-height: 1.4em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      
+        h2 { 
+            line-height: inherit;
+        }
+    
+        
+    
+        &-item {
+            padding-left: 40px;
+            position: relative;
+        
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    
+        &-info {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin: 0 0 .5em 0;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    
+        &-marker {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 15px;
+        
+            &:before {
+                background: $primary-color;
+                border: 3px solid transparent;
+                border-radius: 100%;
+                content: "";
+                display: block;
+                height: 15px;
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 15px;
+                transition: background 0.3s ease-in-out,
+                    border 0.3s ease-in-out;
+            }
+        
+            &:after {
+                content: "";
+                width: 3px;
+                background: #CCD5DB;
+                display: block;
+                position: absolute;
+                top: 24px;
+                bottom: 0;
+                left: 6px;
+            }
+        
+            .steps__timeline-item:last-child &:after {
+                content: none;
+            }
+        }
+
+        &-title {
+            &-subtitle {
+                padding-left: 3px;
+                font-size: 14px;
+            }           
+        }    
+    }    
+}
+
+
+
+.steps__timeline-item:not(.period):hover .steps__timeline-marker:before {
+    background: transparent;
+    border: 3px solid $primary-color;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.steps__timeline-content {
+    padding-bottom: 40px;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.steps__period {
+    padding: 0;
+
+    .steps__timeline-info {
+        display: none;
+    }
+
+    .steps__timeline-marker {
+        &:before {
+            background: transparent;
+            content: "";
+            width: 15px;
+            height: auto;
+            border: none;
+            border-radius: 0;
+            top: 0;
+            bottom: 30px;
+            position: absolute;
+            border-top: 3px solid #CCD5DB;
+            border-bottom: 3px solid #CCD5DB;
+        }
+
+        &:after {
+            content: "";
+            height: 32px;
+            top: auto;
+        }
+    }
+
+    .steps__timeline-content {
+        padding: 40px 0 70px;
+    }
+
+    .steps__timeline-title {
+        margin: 0;
+
+        
+    }
+}
