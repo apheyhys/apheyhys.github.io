@@ -1,7 +1,9 @@
 <!-- Mark up for Site Navigation Section-->
-{{ $address := .Site.Params.address}}
+<!-- {{ $address := .Site.Params.address}} -->
 <header class="header">
   <nav class="main-nav navbar navbar-expand-lg {{ if not $.IsHome }}main-nav-colored{{ end }}">
+    <!-- <nav class="main-nav navbar navbar-expand-lg main-nav-colored"> -->
+
     <div class="container-fluid">
       <a href="{{.Site.BaseURL}}" class="navbar-brand">
         <img src="{{ .Site.Params.logo | absURL}}" alt="site-logo" />
@@ -33,9 +35,9 @@
               Вентиляция
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Наши услуги</a></li>
-              <li><a class="dropdown-item" href="#">Этапы работ</a></li>
-              <li><a class="dropdown-item" href="#">Прайс на монтаж вентиляции</a></li>              
+              <li><a class="dropdown-item" href="#service_vent">Наши услуги</a></li>
+              <li><a class="dropdown-item" href="#steps_vent">Этапы работ</a></li>
+              <li><a class="dropdown-item" href="#price_cond">Прайс на монтаж вентиляции</a></li>              
             </ul>
           </li>
 
@@ -44,16 +46,16 @@
               Кондиционирование
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Наши услуги</a></li>
-              <li><a class="dropdown-item" href="#">Этапы работ</a></li>
-              <li><a class="dropdown-item" href="#">Прайс на монтаж кондиционеров</a></li>
+              <li><a class="dropdown-item" href="#service_cond">Наши услуги</a></li>
+              <li><a class="dropdown-item" href="#steps_cond">Этапы работ</a></li>
+              <li><a class="dropdown-item" href="#price_cond">Прайс на монтаж кондиционеров</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Расчет мощности кондиционера</a></li>
+              <li><a class="dropdown-item" href="#calc_cond">Расчет мощности кондиционера</a></li>
             </ul>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Выполненные работы</a>
+            <a class="nav-link" href="#gallery">Выполненные работы</a>
           </li>
     
 

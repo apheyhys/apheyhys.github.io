@@ -1,44 +1,33 @@
 {{with .Site.Data.price_vent}}
 {{if .enable}}
-<section class="price">
-    <!-- <div class="container-fulid"> -->
-        <!-- <div class="row no-gutters"> -->
-            <div class="price__header">
-                <h2>{{.title}}</h2>
+<section class="price" id="price_vent">
+    <div class="price__header">
+        <h2>{{.title}}</h2>
+    </div>
+    <div class="price__wrapper">
+        <div class="col-md-6">
+            {{ range .left}}
+            <div class="price__item">
+                <p class="price__item-text">{{.item}}
+                </p>
+                <div class="price__item-line"></div>
+                <p class="price__item-value">{{.value}}</p>
             </div>
-            <div class="price__wrapper">
-                <div class="col-md-6">
-                    {{ range .left}}
-                    <div class="price__item">
-                        <p class="price__item-text">{{.item}}
-                        </p>
-                        <div class="price__item-line"></div>
-                        <p class="price__item-value">{{.value}}</p>
-                    </div> 
-                    {{end}}   
-                </div>
-
-                      
-                <div class="col-md-6">
-                    {{ range .right}}
-                    <div class="price__item">
-                        <p class="price__item-text">{{.item}}
-                        </p>
-                        <div class="price__item-line"></div>
-                        <p class="price__item-value">{{.value}}</p>
-                    </div> 
-                    {{end}}   
-
-                </div>
-
-
-
-            <!-- </div> -->
+            {{end}}
         </div>
-    <!-- </div>         -->
 
 
+        <div class="col-md-6">
+            {{ range .right}}
+            <div class="price__item">
+                <p class="price__item-text">{{.item}}
+                </p>
+                <div class="price__item-line"></div>
+                <p class="price__item-value">{{.value}}</p>
+            </div>
+            {{end}}
+        </div>
+    </div>
 </section>
-
 {{end}}
 {{end}}

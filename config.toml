@@ -1,8 +1,7 @@
-baseURL = 'https://apheyhys.github.io'
+baseURL = 'http://localhost:1313'
 languageCode = 'ru-ru'
-paginate = 6
 theme= "coHub"
-title = 'coHub'
+title = 'Кондей Мастер'
  
 [Menu]
   # Main Menu
