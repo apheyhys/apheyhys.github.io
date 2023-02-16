@@ -1,21 +1,47 @@
 .cond_calc {
     user-select: none;
     padding: 80px 0;
-    background: #222029;
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://cohub-hugo.netlify.app/images/testimonial-bg.jpg );
+    padding: 100px 0;
+
+    // filter: opacity(25%);
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: rgba($color: $black, $alpha: 0.5);
+    //   top: 0;
+    //   left: 0;
+    // }
 
 
     &__header {
-        h2 {            
-            color: $white;
+        h2 {
+            // color: $white;
+            text-align: center;
         }
-        
+
     }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        // border: 1px solid black;
+        // filter: none;
+    }
+
+    &__form {
+        background: $white;
+        padding: 50px 70px 40px;
+        border-radius: 6px;   
     }
 
     &__total {
@@ -26,6 +52,12 @@
             font-size: 18px;
             font-weight: bold;
         }
+    }
 
+    &__form-end-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;    
     }
 }

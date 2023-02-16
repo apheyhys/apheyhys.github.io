@@ -8,6 +8,8 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 /*-- GENERAL STYLES
     ------------------------------*/
 .steps {
+    background-color: #f7f8fc;
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -25,8 +27,8 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     &__timeline {
         line-height: 1.4em;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        margin: 50px 0;
+        padding: 0; 
         width: 100%;
       
         h2 { 

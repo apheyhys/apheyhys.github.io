@@ -4,15 +4,18 @@
     <div class="container-fulid">
         <div class="row no-gutters">
             <div class="cond_calc__wrapper">
-                <div class="cond_calc__header">
-                    <h2>Расчет мощности кондиционера</h2>
 
-                </div>
 
-                <form id="cond_calc__form" class="row order-form" action="/" method="POST" onload="ReCalc();">
+                <form id="cond_calc__form" class="row order-form cond_calc__form" action="/" method="POST"
+                    onload="ReCalc();">
+                    <div class="col-md-12 cond_calc__header">
+                        <h2>Расчет мощности кондиционера</h2>
+
+                    </div>
                     <div class="col-md-6 mb-4">
                         <label for="">Тип помещения:</label>
-                        <select  class="custom-select form-control-select mr-2" onchange="ReCalc();" name="room_type" id="room_type">
+                        <select class="custom-select form-control-select mr-2" onchange="ReCalc();" name="room_type"
+                            id="room_type">
                             <option value="2" selected>Жилое</option>
                             <option value="3">Офис</option>
                             <option value="4">Промышленное</option>
@@ -21,13 +24,15 @@
 
                     <div class="col-md-6 mb-4">
                         <label for="">Ориентация окон:</label>
-                        <select onchange="ReCalc();" class="custom-select form-control-select mr-2"  name="window_orientation" id="window_orientation">
+                        <select onchange="ReCalc();" class="custom-select form-control-select mr-2"
+                            name="window_orientation" id="window_orientation">
                             <option value="1" selected>Север</option>
                             <option value="2">Юг</option>
                             <option value="3">Запад</option>
                             <option value="4">Восток</option>
                         </select>
                     </div>
+
                     <div class="col-md-6">
                         <label for="">Площадь помещения, м<sup>2</sup>:</label>
                         <input class="form-control" onkeyup="ReCalc();" name="s" value="20" type="text">
@@ -38,28 +43,25 @@
                         <input class="form-control" onkeyup="ReCalc();" name="h" value="2.7" type="text">
                     </div>
 
-                    
+                    <div class="cond_calc__form-end-row">
+                        <div class="col-md-6">
+                            <label for="">Количество компьтеров/оргтехники:</label>
+                            <input class="form-control" onkeyup="ReCalc();" name="teh" value="1" type="text">
+                        </div>
 
-                    <div class="col-md-6">
-                        <label for="">Количество компьтеров/оргтехники:</label>
-                        <input class="form-control" onkeyup="ReCalc();" name="teh" value="1" type="text">
-                    </div>
+                        <div class="col-md-6">
+                            <label for="">Количество людей в помещении:</label>
+                            <input class="form-control" onkeyup="ReCalc();" name="man" value="1" type="text">
+                        </div>
 
-                    <div class="col-md-6">
-                        <label for="">Количество людей в помещении:</label>
-                        <input class="form-control" onkeyup="ReCalc();" name="man" value="1" type="text">
                     </div>
 
                     <div class="cond_calc__total">
                         <p>Оптимальная мощность, <span id="qa">0</span> кВт</p>
                         <p>Рекомендуемый диапазон, <span id="dq">0</span> кВт </p>
-                    </div>     
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
-
-
-{{ $script := resources.Get "js/cond_calc.js" | minify}}
-
