@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313'
+baseURL = 'https://apheyhys.github.io'
 languageCode = 'ru-ru'
 theme= "coHub"
 title = 'Кондей Мастер'
